@@ -1,37 +1,37 @@
 #ifndef __MATH_UTILS__
 #define __MATH_UTILS__
 
-#include "Triplet.h"
-#include "Quaternion.h"
+#include "Vector3I.h"
+#include "Vector4I.h"
 #include "Matrix.h"
 
 namespace xengine
 {
 	// 向量的运算
 	template<typename T>
-	extern Triplet<T> Multiply(const Triplet<T>& t, const T& expr);
+	extern Vector3I<T> Multiply(const Vector3I<T>& t, const T& expr);
 
 	template<typename T>
-	extern Quaternion<T> Multiply(const Quaternion<T>& t, const T& expr);
-
-
-	template<typename T>
-	extern T Dot(const Triplet<T>& t1, const Triplet<T>& t2);
-
-	template<typename T>
-	extern T Dot(const Quaternion<T>& t1, const Quaternion<T>& t2);
+	extern Vector4I<T> Multiply(const Vector4I<T>& t, const T& expr);
 
 
 	template<typename T>
-	extern Triplet<T> Cross(const Triplet<T>& t1, const Triplet<T>& t2);
+	extern T Dot(const Vector3I<T>& t1, const Vector3I<T>& t2);
 
 	template<typename T>
-	extern Quaternion<T> Cross(const Quaternion<T>& t1, const Quaternion<T>& t2);
+	extern T Dot(const Vector4I<T>& t1, const Vector4I<T>& t2);
+
+
+	template<typename T>
+	extern Vector3I<T> Cross(const Vector3I<T>& t1, const Vector3I<T>& t2);
+
+	template<typename T>
+	extern Vector4I<T> Cross(const Vector4I<T>& t1, const Vector4I<T>& t2);
 
 
 	// 矩阵的运算
 	template<typename T>
-	extern Matrix3<T> Multiply(const Matrix3<T>& t1, const Matrix3<T>& t2);
+	extern Matrix3I<T> Multiply(const Matrix3I<T>& t1, const Matrix3I<T>& t2);
 
 	template<typename T>
 	extern Matrix4<T> Multiply(const Matrix4<T>& t1, const Matrix4<T>& t2);
