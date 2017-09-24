@@ -15,10 +15,6 @@
 	.-
 	-readme.md
 	-XEngine.sln
-	-XEngine.VC
-    -x64--
-	------Debug
-	------Release
 	-XEngine--
 	----------XEngine.vcxproj
 	----------XEngine.vcxproj.filters
